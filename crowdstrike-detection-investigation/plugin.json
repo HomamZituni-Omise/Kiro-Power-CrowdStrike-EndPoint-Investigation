@@ -1,0 +1,19 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "crowdstrike-detection-investigation",
+  "version": "1.0.0",
+  "description": "Structured CrowdStrike Falcon detection investigation for Automated Leads and endpoint detections. Walks a mandatory 8-step decision tree, renders a five-verdict determination with confidence and contact routing, and drafts a SEC Jira ticket. Read-only against Falcon by policy.",
+  "author": {
+    "name": "Homam Zituni"
+  },
+  "keywords": [
+    "crowdstrike",
+    "falcon",
+    "detection-investigation",
+    "endpoint-detection",
+    "automated-leads",
+    "soc-triage",
+    "incident-response"
+  ],
+  "license": "MIT"
+}

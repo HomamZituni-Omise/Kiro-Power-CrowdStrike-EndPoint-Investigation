@@ -1,0 +1,29 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "falcon": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": ["falcon-mcp"],
+      "env": {
+        "FALCON_CLIENT_ID": "${FALCON_CLIENT_ID}",
+        "FALCON_CLIENT_SECRET": "${FALCON_CLIENT_SECRET}",
+        "FALCON_BASE_URL": "${FALCON_BASE_URL}",
+        "FALCON_MCP_MODULES": "hosts,detections,ioc,ngsiem"
+      }
+    },
+    "atlassian": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": ["mcp-atlassian"],
+      "env": {
+        "JIRA_URL": "${JIRA_URL}",
+        "JIRA_USERNAME": "${JIRA_USERNAME}",
+        "JIRA_API_TOKEN": "${JIRA_API_TOKEN}",
+        "CONFLUENCE_URL": "${CONFLUENCE_URL}",
+        "CONFLUENCE_USERNAME": "${CONFLUENCE_USERNAME}",
+        "CONFLUENCE_API_TOKEN": "${CONFLUENCE_API_TOKEN}"
+      }
+    }
+  }
+}
